@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/blue">
+
+        <View
+            android:id="@+id/ll_left"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_press_color"></View>
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back2x" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:background="@drawable/search_bg">
+
+            <ImageView
+                android:id="@+id/bt_search"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/search_icon" />
+
+            <com.example.yyiwen.fastmaildemo.View.ClearEditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/bt_search"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="搜索"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

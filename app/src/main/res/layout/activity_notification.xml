@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yyiwen.fastmaildemo.Activity.NotificationActivity">
+
+    <Button
+        android:id="@+id/btnSmile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:text="我今天非常高兴" />
+
+    <Button
+        android:id="@+id/btnWhy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:text="返是为什么呢?" />
+
+    <Button
+        android:id="@+id/btnWrath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:text="今天心情丌好" />
+
+    <Button
+        android:id="@+id/btnRing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用默认的声音" />
+
+    <Button
+        android:id="@+id/btnVibrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用默认的震劢" />
+
+    <Button
+        android:id="@+id/btnLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用默认的 Light" />
+
+    <Button
+        android:id="@+id/btnRingAndVibrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="所有的都使用默认值" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清除通知" />
+</LinearLayout>

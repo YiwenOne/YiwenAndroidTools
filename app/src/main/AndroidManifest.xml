@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yyiwen.fastmaildemo">
+
+    <!-- Required 一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.chuji.crmcj.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- Optional for location -->
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于提高GPS定位速度 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".View.BMapApiDemoApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".Service.myService">
+            <intent-filter>
+                <action android:name="com.example.yyiwen.fastmaildemo.Service" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="89e919b572592b8ed53ce9eff88d61c6" />
+        <!-- &lt;!&ndash; 定位需要的服务 &ndash;&gt; -->
+        <!-- <service android:name="com.amap.api.location.APSService" > -->
+        <!-- </service> -->
+        <activity
+            android:name=".Activity.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.SetActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".Activity.DrawableActivity" />
+        <activity android:name=".Activity.TabLayoutTopActivity" />
+        <activity android:name=".Activity.TabLayoutBottomActivity" />
+        <activity
+            android:name=".Activity.BrandScreenActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Activity.GesturePasswordActivity" />
+        <activity
+            android:name=".Activity.LockActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LockSetupActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity.IntentActivity" />
+        <activity android:name=".Activity.FileActivity" />
+        <activity android:name=".Activity.AnimationActivity" />
+        <activity android:name=".Activity.DrawActivity" />
+        <activity android:name=".Activity.JSAndroidActivity" />
+        <activity android:name=".Activity.WebViewDemo" />
+        <activity android:name=".Activity.WebActivity" />
+        <activity
+            android:name=".Activity.WebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Activity.LoadMoreActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Activity.RecyclerViewActivity" />
+        <activity android:name=".Activity.CompassActivity" />
+
+        <receiver android:name=".Receiver.LifefromDetectedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.paad.action.NEW_LIFEFORM" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Activity.IntentBroadcastActivity" />
+        <activity android:name=".Activity.FileOutputAndInputActivity" />
+        <activity
+            android:name=".Activity.RxjavaHelloActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Activity.MapViewActivity" />
+        <activity android:name=".Activity.DiyScreenActivity" />
+        <activity android:name=".Activity.TwinklingRefreshActivity" />
+        <activity android:name=".Activity.WaterPhotoActivity" />
+        <activity android:name=".Activity.WaterCameraActivity" />
+        <activity android:name=".Activity.CameraUseActivity" />
+        <activity android:name=".Activity.ChooseCityActivity" />
+        <activity
+            android:name="com.zaaach.citypicker.CityPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CityPicker.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".Activity.GaodeMapActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".Activity.AMapActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Activity.NavigationActivity" />
+        <activity android:name=".Activity.RippleEffectActivity" />
+        <activity
+            android:name=".Activity.LaunchAppActivity"
+            android:theme="@style/AppTheme.Placeholder" />
+        <activity android:name=".Activity.SearchActivity" />
+        <activity android:name=".Activity.ViewSwitcherActivity" />
+        <activity android:name=".Activity.HideOnScrollActivity" />
+        <activity android:name=".Activity.AdapterActivity" />
+        <activity android:name=".Activity.MoreDialogActivity" />
+        <activity android:name=".Activity.LoadingActivity" />
+        <activity android:name=".Activity.NotificationActivity" />
+        <activity android:name=".Activity.RatingBarActivity" />
+        <activity android:name=".Activity.ImageSwicherActivity" />
+        <activity android:name=".Activity.MoreTextShowAndHideActivity" />
+        <activity android:name=".Activity.BannerActivity" />
+        <activity android:name=".Activity.LoginActivity"></activity>
+        <activity android:name=".Activity.DrawLayoutActivity" />
+        <activity android:name=".Activity.VoiceActivity" />
+        <activity android:name=".Activity.ControlActivity"></activity>
+    </application>
+
+</manifest>

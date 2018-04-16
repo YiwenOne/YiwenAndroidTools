@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NiceSpinner">
+        <attr name="arrowTint" format="color" />
+        <attr name="hideArrow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="InsureItemView">
+        <attr name="name" format="string" />
+        <attr name="cost" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="SettingItemView">
+        <attr name="setitemtitle" format="string" />
+        <attr name="itbackground" format="string"></attr>
+        <attr name="time" format="string" />
+    </declare-styleable>
+    <declare-styleable name="EditText">
+        <!-- 总共输入长度 -->
+        <attr name="totalLength" format="integer" />
+        <!-- 每组的长度 -->
+        <attr name="eachLength" format="integer" />
+        <!-- 分隔符 -->
+        <attr name="delimiter" format="string" />
+        <!-- 占位符 -->
+        <attr name="placeHolder" format="string" />
+    </declare-styleable>
+    <declare-styleable name="ConvenientBanner">
+        <attr name="canLoop" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <!--Tab切换动画自定义-->
+    <attr name="indicatorColor" format="color" />
+    <attr name="dividerColor" format="color" />
+    <attr name="bottomLineColor" format="color" />
+    <attr name="dividerMargin" format="dimension" />
+    <attr name="indicatorHeight" format="dimension" />
+    <attr name="bottomLineHeight" format="dimension" />
+    <attr name="dividerWidth" format="dimension" />
+    <declare-styleable name="SlidingTabLayout">
+        <attr name="indicatorColor" />
+        <attr name="dividerColor" />
+        <attr name="bottomLineColor" />
+        <attr name="dividerMargin" />
+        <attr name="indicatorHeight" />
+        <attr name="bottomLineHeight" />
+        <attr name="dividerWidth" />
+    </declare-styleable>
+
+
+    <declare-styleable name="AVLoadingIndicatorView">
+        <attr name="indicator">
+            <flag name="BallPulse" value="0" />
+            <flag name="BallGridPulse" value="1" />
+            <flag name="BallClipRotate" value="2" />
+            <flag name="BallClipRotatePulse" value="3" />
+            <flag name="SquareSpin" value="4" />
+            <flag name="BallClipRotateMultiple" value="5" />
+            <flag name="BallPulseRise" value="6" />
+            <flag name="BallRotate" value="7" />
+            <flag name="CubeTransition" value="8" />
+            <flag name="BallZigZag" value="9" />
+            <flag name="BallZigZagDeflect" value="10" />
+            <flag name="BallTrianglePath" value="11" />
+            <flag name="BallScale" value="12" />
+            <flag name="LineScale" value="13" />
+            <flag name="LineScaleParty" value="14" />
+            <flag name="BallScaleMultiple" value="15" />
+            <flag name="BallPulseSync" value="16" />
+            <flag name="BallBeat" value="17" />
+            <flag name="LineScalePulseOut" value="18" />
+            <flag name="LineScalePulseOutRapid" value="19" />
+            <flag name="BallScaleRipple" value="20" />
+            <flag name="BallScaleRippleMultiple" value="21" />
+            <flag name="BallSpinFadeLoader" value="22" />
+            <flag name="LineSpinFadeLoader" value="23" />
+            <flag name="TriangleSkewSpin" value="24" />
+            <flag name="Pacman" value="25" />
+            <flag name="BallGridBeat" value="26" />
+            <flag name="SemiCircleSpin" value="27" />
+        </attr>
+        <attr name="indicator_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="InsureItem">
+        <attr name="title"></attr>
+    </declare-styleable>
+    <declare-styleable name="LockPatternView">
+        <!-- Aspect to use when drawing LockPatternView. Choices are "square"(default), "lock_width"
+             or "lock_height" -->
+        <attr name="aspect" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CollapsibleTextView">
+        <attr name="suffixColor" format="color"/>
+        <attr name="collapsedLines" format="integer"/>
+        <attr name="collapsedText" format="string"/>
+        <attr name="expandedText" format="string"/>
+        <attr name="suffixTrigger" format="boolean"/>
+    </declare-styleable>
+</resources>

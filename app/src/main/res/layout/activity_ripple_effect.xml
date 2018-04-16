@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.example.yyiwen.fastmaildemo.Activity.RippleEffectActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.example.yyiwen.fastmaildemo.View.RippleView
+            android:id="@+id/rippleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.example.yyiwen.fastmaildemo.View.RoundImageView
+            android:id="@+id/roundImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/myphoto"
+            imagecontrol:border_inside_color="#bc0978"
+            imagecontrol:border_outside_color="#ba3456"
+            imagecontrol:border_thickness="1dp" />
+    </RelativeLayout>
+</LinearLayout>

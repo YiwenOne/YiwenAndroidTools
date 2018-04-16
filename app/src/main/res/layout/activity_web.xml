@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.example.yyiwen.fastmaildemo.Activity.WebActivity" >
+    <LinearLayout android:layout_height="wrap_content" 
+        android:background="@drawable/bgcolorblue"
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+        <Button android:layout_height="wrap_content"
+            android:background="@drawable/titlebackground"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:id="@+id/javaCallJs_web_button"
+            android:text="Java调用无参数JS"/>
+        <Button android:layout_height="wrap_content"
+            android:background="@drawable/titlebackground"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:id="@+id/javaCallJsParam_web_button"
+            android:text="Java调用含参数JS"/>
+    </LinearLayout>
+    <WebView
+        android:id="@+id/webView_web"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"/>
+</LinearLayout>
